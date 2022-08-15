@@ -1,4 +1,4 @@
-{% set version = "0.5.3" %}
+{% set version = "0.5.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mlr3learners_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mlr3learners/mlr3learners_{{ version }}.tar.gz
-  sha256: ed0310419906fbace1c54ffb4c9bf4c8e13d0aae267b79d8d6fde9b3e3151121
+  sha256: 7378a08a90cdc4e7da7cbf23f183beac7d3b3f0250254bb576facb0db7c44269
 
 build:
   merge_build_host: true  # [win]
