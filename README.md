@@ -1,11 +1,11 @@
-About r-mlr3learners
-====================
+About r-mlr3learners-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mlr3learners-feedstock/blob/main/LICENSE.txt)
 
 Home: https://mlr3learners.mlr-org.com, https://github.com/mlr-org/mlr3learners
 
 Package license: LGPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mlr3learners-feedstock/blob/main/LICENSE.txt)
 
 Summary: Recommended Learners for 'mlr3'. Extends 'mlr3' and 'mlr3proba' with interfaces to essential machine learning packages on CRAN.  This includes, but is not limited to: (penalized) linear and logistic regression, linear and quadratic discriminant analysis, k-nearest neighbors, naive Bayes, support vector machines, and gradient boosting.
 
