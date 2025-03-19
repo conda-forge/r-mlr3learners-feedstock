@@ -1,4 +1,4 @@
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mlr3learners_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mlr3learners/mlr3learners_{{ version }}.tar.gz
-  sha256: 007b2649223fe74d15f3b0abc62af048b81d9adbccccf5854ff08765a293bda4
+  sha256: 1eafbf5f065d9590678c3cb0153b9d2730d6fe2e9ca00cd090da0c2c735a5e1f
 
 build:
   number: 0
