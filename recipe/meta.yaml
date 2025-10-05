@@ -17,6 +17,10 @@ build:
   rpaths:
     - lib/R/lib/
     - lib/
+  missing_dso_whitelist:
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 requirements:
   build:
@@ -25,17 +29,19 @@ requirements:
   host:
     - r-base
     - r-r6
+    - r-checkmate
     - r-data.table
-    - r-mlr3 >=0.6.0
-    - r-mlr3misc >=0.5.0
-    - r-paradox
+    - r-mlr3 >=1.2.0
+    - r-mlr3misc >=0.9.4
+    - r-paradox >=1.0.0
   run:
     - r-base
     - r-r6
+    - r-checkmate
     - r-data.table
-    - r-mlr3 >=0.6.0
-    - r-mlr3misc >=0.5.0
-    - r-paradox
+    - r-mlr3 >=1.2.0
+    - r-mlr3misc >=0.9.4
+    - r-paradox >=1.0.0
 
 test:
   commands:
