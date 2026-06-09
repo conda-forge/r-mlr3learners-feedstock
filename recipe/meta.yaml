@@ -1,4 +1,4 @@
-{% set version = "0.14.0" %}
+{% set version = "0.15.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mlr3learners_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mlr3learners/mlr3learners_{{ version }}.tar.gz
-  sha256: 49b4afb1cf8cd72ce067e279a1870151bb14ded22fc19b5529a31cc3019d258e
+  sha256: f58a8d11f817cf6d0b3158a9f29a0195d95facb5f33c5b271c025bb86898e822
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -20,7 +20,7 @@ build:
     - '*/R.dll'        # [win]
     - '*/Rblas.dll'    # [win]
     - '*/Rlapack.dll'  # [win]
-  skip: True  # [win]
+  skip: true  # [win]
 
 requirements:
   build:
